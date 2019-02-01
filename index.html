@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=en>
+<title>drag and drop</title>
+<meta content="width=device-width">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://s.codepen.io/hajer89/debug/aQoGrW/dXkqBZmpDnJM">Contact me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://s.codepen.io/hajer89/debug/oQvdEw/dGrXWdRVLDjM">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="openForm()">Log in</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="img-felicitation" id="img-felicitation"></div>
+        <div class="score-test">
+            <p> Score: <span id="score">0</span></p>
+        </div>
+
+        <div class="name-div" id="name-fruit">
+            <div ondrop="drop01(event);" ondragstart="drag01(event);" ondragover="dragover01(event);">
+                <p id="source01" ondragstart="drag01(event);" draggable="true">ABRICOT</p>
+            </div>
+
+            <div ondrop="drop02(event);" ondragstart="drag02(event);" ondragover="dragover02(event);">
+                <p id="source02" ondragstart="drag02(event);" draggable="true">KIWI</p>
+            </div>
+
+            <div ondrop="drop03(event);" ondragstart="drag03(event);" ondragover="dragover03(event);">
+                <p id="source03" ondragstart="drag03(event);" draggable="true">POMME</p>
+            </div>
+
+            <div ondrop="drop04(event);" ondragstart="drag04(event);" ondragover="dragover04(event);">
+                <p id="source04" ondragstart="drag04(event);" draggable="true">PRUNE</p>
+            </div>
+        </div>
+
+        <div class="image-div">
+
+            <div id="target01" ondrop="drop01(event);" ondragover="dragover01(event);" class="image1"></div>
+
+            <div id="target02" ondrop="drop02(event);" ondragover="dragover02(event);" class="image2"></div>
+
+            <div id="target03" ondrop="drop03(event);" ondragover="dragover03(event);" class="image3"></div>
+
+            <div id="target04" ondrop="drop04(event);" ondragover="dragover04(event);" class="image4"></div>
+
+        </div>
+
+        <div class="btn">
+            <button type="submit" class="btn-submit" id="btn-submit"> Submit</button>
+            <button type="reset" class="btn-reset"> Reset </button>
+        </div>
+
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </main>
+    <script src="drag.js"></script>
+</body>
+</html>

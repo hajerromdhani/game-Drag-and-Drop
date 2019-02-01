@@ -1,0 +1,155 @@
+body{
+    background-image:url("http://boombob.ru/img/picture/Jul/04/7104805e91f1b21068ea7c4cfb1866aa/1.jpg");
+    background-size:cover;
+     background-repeat:no-repeat; 
+   }
+   .score-test{
+     text-align:center;
+   }
+   .name-div{
+     display:flex;
+     justify-content:center;
+   }
+   .image-div{
+     display:flex;
+     justify-content:center;
+     position: relative;
+   }
+    div {
+       margin: 10px;
+       padding: 10px;
+     }
+   p{
+     padding:5px;
+   }
+   #source01 {
+       color: blue;
+       border: 1px solid black;
+     }
+   #target01 {
+       border: 1px solid black;
+     }
+   #source02 {
+       color: blue;
+       border: 1px solid black;
+     }
+   #target02 {
+       border: 1px solid black;
+     }
+   #source03 {
+       color: blue;
+       border: 1px solid black;
+     }
+   #target03 {
+       border: 1px solid black;
+     }
+   #source04 {
+       color: blue;
+       border: 1px solid black;
+     }
+   #target04 {
+       border: 1px solid black;
+     }
+   .image1{
+     background-image:url("http://vergerpelanne.com/wp-content/uploads/2017/06/fruit-abricot.jpg");
+     width:150px;
+     height:100px;
+     background-size:cover;
+     background-repeat:no-repeat; 
+   }
+   .image2{
+     background-image:url("http://vergerpelanne.com/wp-content/uploads/2017/06/kiwi-kiwi.jpg");
+     width:150px;
+     height:100px;
+     background-size:cover;
+     background-repeat:no-repeat; 
+   }
+   .image3{
+     background-image:url("http://vergerpelanne.com/wp-content/uploads/2017/06/fruit-pomme.jpg");
+     width:150px;
+     height:100px;
+     background-size:cover;
+     background-repeat:no-repeat; 
+   }
+   .image4{
+     background-image:url("http://vergerpelanne.com/wp-content/uploads/2017/06/fruit-prune.jpg");
+     width:150px;
+     height:100px;
+     background-size:cover;
+     background-repeat:no-repeat; 
+   }
+ 
+   .img-felicitation {
+       display:flex;
+       background-image: url("https://groupecasino.i.lithium.com/t5/image/serverpage/image-id/161790i86099CB6FEC9B60D?v=1.0");
+       width: 0px;
+       height: 0px;
+       left: -40px;
+       background-size:cover;
+       background-repeat:no-repeat; 
+       z-index: 1;
+       position: absolute;
+   }
+   .btn{
+     display:flex;
+     justify-content: center;
+   }
+   body {font-family: Arial, Helvetica, sans-serif;}
+   * {box-sizing: border-box;}
+   .open-button {
+     color: white;
+     border: none;
+     cursor: pointer;
+   }
+   
+   .form-popup {
+     display: none;
+     position: fixed;
+     bottom: 0;
+     right: 15px;
+     border: 3px solid #f1f1f1;
+     z-index: 9;
+   }
+  
+   .form-container {
+     max-width: 300px;
+     padding: 10px;
+     background-color: white;
+   }
+   
+   .form-container input[type=text], .form-container input[type=password] {
+     width: 100%;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: #f1f1f1;
+   }
+   
+
+   .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+     background-color: #ddd;
+     outline: none;
+   }
+   
+  
+   .form-container .btn {
+     background-color: #4CAF50;
+     color: white;
+     padding: 16px 20px;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     margin-bottom:10px;
+     opacity: 0.8;
+   }
+   
+   
+   .form-container .cancel {
+     background-color: red;
+   }
+   
+   /* Add some hover effects to buttons */
+   .form-container .btn:hover, .open-button:hover {
+     opacity: 1;
+   }
+  
